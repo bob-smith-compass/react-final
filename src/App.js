@@ -4,12 +4,18 @@ import './App.css';
 import List from './components/list/List';
 
 class App extends Component {
+  constructor() {
+    super()
+    let names = ["Sara", "Natasha", "Christina"];
+
+  }
   handleClick() {
     alert('Clicked');
   }
+  
   render() {
     return (
-      <div>
+      <div className="container">
         {this.props.names.map((e, i) => {
           return <div key={i}>
             <div className="card" style={{width: "18rem"}}>
@@ -22,7 +28,8 @@ class App extends Component {
             </div>
           </div>
         })}
-        <List />
+        {/* <List names={this.names}/> */}
+        <List names={["Sara", "Natasha", "Christina"]}/>
       </div>
     );
   }

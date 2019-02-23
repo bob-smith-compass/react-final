@@ -18,7 +18,7 @@ function Time(props) {
         </div>
     )
 }
-Time.propTtypes = {
-    now: PropTypes.Time.isRequired
-}
+// Time.propTtypes = {
+    // now: PropTypes.Time.isRequired
+// }
 export default Time;

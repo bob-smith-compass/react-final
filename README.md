@@ -3,6 +3,22 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## JSX
+Babel transforms JSX into JavaScript behind the scene in react:
+```function Sum(props) {
+  return (
+    <div>React</div>
+    )
+}
+```
+```
+"use strict";
+
+function Sum(props) {
+  return React.createElement("div", null, "React");
+}
+```
+
 ## PropTypes
 `import PropTypes from 'prop-types'`
 

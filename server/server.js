@@ -1,9 +1,12 @@
 const express = require('express')
 const path = require('path');
 const chalk = require('chalk');
-const debug = require('debug');
-const app = express()
-const port = 9090
+const morgan = require('morgan');
+const debug = require('debug')('app');
+const app = express();
+const port = 9090;
+
+app.use(morgan('combined'));
 
 app.get('/', (req, res) => {
     // res.send('Hello World!')

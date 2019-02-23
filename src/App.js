@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import './App.css';
 import List from './components/list/List';
 import Time from './components/time/Time';
+import Button from './components/button/Button';
 
 class App extends Component {
   constructor() {
@@ -18,6 +19,7 @@ class App extends Component {
     return (
       <div className="container">
       <Time now={new Date().toISOString()}/>
+      <Button />
         {this.props.names.map((e, i) => {
           return <div key={i}>
             <div className="card" style={{width: "18rem"}}>

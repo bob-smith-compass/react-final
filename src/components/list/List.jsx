@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function List() {
+export default function List(props) {
   return (
     <div className="container">
       <h3>List</h3>
@@ -23,18 +23,7 @@ export default function List() {
       <td>Otto</td>
       <td>@mdo</td>
     </tr>
-    <tr>
-      <th scope="row">2</th>
-      <td>Jacob</td>
-      <td>Thornton</td>
-      <td>@fat</td>
-    </tr>
-    <tr>
-      <th scope="row">3</th>
-      <td>Larry</td>
-      <td>the Bird</td>
-      <td>@twitter</td>
-    </tr>
+    {/* {props.names.map()} */}
   </tbody>
 </table>
 

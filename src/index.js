@@ -5,7 +5,11 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 import 'bootstrap/dist/css/bootstrap.css';
 
-ReactDOM.render(<App names={["John", "Bob", "David"]}/>, document.getElementById('root'));
+let model = {
+    names: ["John", "Bob", "David"]
+}
+
+ReactDOM.render(<App names={model.names}/>, document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.

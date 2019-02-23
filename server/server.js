@@ -8,7 +8,7 @@ const port = 9090;
 
 app.use(morgan('combined'));
 // app.use(morgan('tiny'));
-app.use(express.static());
+app.use(express.static(path.join(__dirname, 'public')));
 
 app.get('/', (req, res) => {
     // res.send('Hello World!')
@@ -17,7 +17,7 @@ app.get('/', (req, res) => {
 
 });
 app.get('/about', (req, res) => {
-    res.sendFile(__dirname, about.html);
+    res.sendFile(__dirname, 'about.html');
 })
 
 app.listen(port, () => {

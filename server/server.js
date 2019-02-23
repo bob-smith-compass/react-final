@@ -8,6 +8,7 @@ const port = 9090;
 
 app.use(morgan('combined'));
 // app.use(morgan('tiny'));
+app.use(express.static());
 
 app.get('/', (req, res) => {
     // res.send('Hello World!')

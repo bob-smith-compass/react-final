@@ -1,8 +1,11 @@
 import React from 'react'
 
 export default function List(props) {
+    let componentWillMount = function() {
+        console.log(`componentWillMount`);
+    };
     return (
-        <div className="container">
+        <div Name="container">
             <h3>List</h3>
             {props.names}
 
@@ -26,7 +29,7 @@ export default function List(props) {
                     </tr>
                     {props.names.map((e, i) => {
                         return (
-                            <div>{e}</div>
+                            <span>{e}</span>
                         )
                     })}
                 </tbody>

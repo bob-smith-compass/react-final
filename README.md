@@ -3,6 +3,9 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## this.state 
+To use state you must use Class Component
+
 ## Lifecycle of Component
 
 ### Mounting

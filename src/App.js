@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 // import logo from './logo.svg';
 import './App.css';
 import List from './components/list/List';
+import Time from './components/time/Time';
 
 class App extends Component {
   constructor() {
@@ -16,6 +17,7 @@ class App extends Component {
   render() {
     return (
       <div className="container">
+      <Time />
         {this.props.names.map((e, i) => {
           return <div key={i}>
             <div className="card" style={{width: "18rem"}}>

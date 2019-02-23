@@ -3,6 +3,9 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## props also used to pass data OUT of a Component
+
+
 ## JSX
 Babel transforms JSX into JavaScript behind the scene in react:
 [https://babeljs.io/repl](https://babeljs.io/repl)

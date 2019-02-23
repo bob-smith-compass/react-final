@@ -3,6 +3,10 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## localFunction.bind(this)
+
+`this.handleClick = this.handleClick.bind(this);`
+
 ## this.state 
 To use state you must use Class Component
 

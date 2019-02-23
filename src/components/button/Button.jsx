@@ -12,7 +12,7 @@ export default class Button extends Component {
   render() {
     return (
       <div>
-          <button onClick={this.handleClick}>{this.state.clicks}</button>
+          <button className="btn btn-danger" onClick={this.handleClick}>{this.state.clicks}</button>
       </div>
     )
   }

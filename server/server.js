@@ -9,6 +9,12 @@ const port = 9090;
 app.use(morgan('combined'));
 // app.use(morgan('tiny'));
 app.use(express.static(path.join(__dirname, 'public')));
+/**
+ * serve static contents from local node_modules
+ */
+app.use('/css', express.static(path.join(__dirname, '../node_modules/bootstrap/dist/css')));
+app.use('/js', express.static(path.join(__dirname, '../node_modules/bootstrap/dist/js')));
+app.use('/js', express.static(path.join(__dirname, '../node_modules/jquery/dist/')));
 
 app.get('/', (req, res) => {
     // res.send('Hello World!')

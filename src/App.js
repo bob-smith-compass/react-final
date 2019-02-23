@@ -17,7 +17,7 @@ class App extends Component {
   render() {
     return (
       <div className="container">
-      <Time />
+      <Time now={new Date().toISOString()}/>
         {this.props.names.map((e, i) => {
           return <div key={i}>
             <div className="card" style={{width: "18rem"}}>

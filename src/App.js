@@ -5,13 +5,14 @@ import List from './components/list/List';
 import Time from './components/time/Time';
 import Button from './components/button/Button';
 import PropTypes from 'prop-types';
+import SimpleList from './components/list/SimpleList';
 
 
 class App extends Component {
   constructor() {
     super();
-    // this.names = ["Sara", "Natasha", "Christina"];
-    this.names = {a: "Sara", b:"Natasha", c:"Christina"};
+    this.names = ["Sara", "Natasha", "Christina"];
+    this.nameso = {a: "Sara", b:"Natasha", c:"Christina"};
     this.propTypes = {
       names: PropTypes.array.isRequired
     }
@@ -25,6 +26,7 @@ class App extends Component {
     return (
       <div className="container">
       <Time now={new Date().toISOString()}/>
+      <SimpleList {...this.nameso} />
       <Button /><br/>
       <Button /><br/>
         {this.props.names.map((e, i) => {

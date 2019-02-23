@@ -1,7 +1,9 @@
 import React from 'react';
 import $ from 'jquery';
+import PropTypes from 'prop-types';
 
-export default function Time(props) {
+
+function Time(props) {
     
     // $('.alert').alert();
 
@@ -16,3 +18,7 @@ export default function Time(props) {
         </div>
     )
 }
+Time.propTtypes = {
+    now: PropTypes.Time.isRequired
+}
+export default Time;

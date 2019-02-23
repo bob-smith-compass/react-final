@@ -6,6 +6,10 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## PropTypes
 `import PropTypes from 'prop-types'`
 
+```this.propTypes = {
+      names: PropTypes.array.isRequired
+      ```
+
 ## localFunction.bind(this)
 
 `this.handleClick = this.handleClick.bind(this);`

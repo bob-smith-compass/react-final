@@ -9,8 +9,9 @@ import PropTypes from 'prop-types';
 
 class App extends Component {
   constructor() {
-    super()
-    let names = ["Sara", "Natasha", "Christina"];
+    super();
+    // this.names = ["Sara", "Natasha", "Christina"];
+    this.names = {a: "Sara", b:"Natasha", c:"Christina"};
     this.propTypes = {
       names: PropTypes.array.isRequired
     }

@@ -3,6 +3,14 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Lifecycle of Component
+
+### Mounting
+constructor -> componentWillMount -> render -> componentDidMount
+
+### Updating
+componentWillReceiveProps -> componentwillUpdate -> render -> componentDidUpdate
+
 ## Available Scripts
 
 In the project directory, you can run:

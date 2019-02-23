@@ -7,7 +7,7 @@ export default class Button extends Component {
         this.handleClick = this.handleClick.bind(this);
     }
     handleClick() {
-        this.setState({clicks: this.state.clicks + 1})
+        this.setState({clicks: this.state.clicks + 1});
     }
   render() {
     return (

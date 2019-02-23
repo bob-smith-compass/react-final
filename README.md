@@ -3,6 +3,9 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## PropTypes
+`import PropTypes from 'prop-types'`
+
 ## localFunction.bind(this)
 
 `this.handleClick = this.handleClick.bind(this);`

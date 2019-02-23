@@ -4,11 +4,16 @@ import './App.css';
 import List from './components/list/List';
 import Time from './components/time/Time';
 import Button from './components/button/Button';
+import PropTypes from 'prop-types';
+
 
 class App extends Component {
   constructor() {
     super()
     let names = ["Sara", "Natasha", "Christina"];
+    this.propTypes = {
+      names: PropTypes.array.isRequired
+    }
 
   }
   handleClick() {
@@ -19,7 +24,8 @@ class App extends Component {
     return (
       <div className="container">
       <Time now={new Date().toISOString()}/>
-      <Button />
+      <Button /><br/>
+      <Button /><br/>
         {this.props.names.map((e, i) => {
           return <div key={i}>
             <div className="card" style={{width: "18rem"}}>

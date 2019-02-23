@@ -10,7 +10,9 @@ app.use(morgan('combined'));
 
 app.get('/', (req, res) => {
     // res.send('Hello World!')
-    res.render(path.join(__dirname, 'public/index'));
+    // res.render(path.join(__dirname, 'public/index')); // Error: No default engine was specified and no extension was provided.
+    res.sendFile(path.join(__dirname, 'index.html')); 
+
 })
 
 app.listen(port, () => {

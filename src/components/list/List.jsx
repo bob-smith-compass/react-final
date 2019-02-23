@@ -25,10 +25,10 @@ export default function List(props) {
                         <td>@mdo</td>
                     </tr>
                     {props.names.map((e, i) => {
-        return(
-        <div>{e}</div>
-        )
-    })}
+                        return (
+                            <div>{e}</div>
+                        )
+                    })}
                 </tbody>
             </table>
 

@@ -5,6 +5,17 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## props also used to pass data OUT of a Component
 
+Data passed OUT of a React Component
+```
+export default function Event({passDataOut}) {
+  return (
+    <div>
+      <button className="btn btn-primary" onClick={(e) => passDataOut('Data')}>Data!</button>
+      <button className="btn btn-primary" onClick={(e) => passDataOut('Out!')}>Out!</button>
+    </div>
+  )
+}
+```
 
 ## JSX
 Babel transforms JSX into JavaScript behind the scene in react:

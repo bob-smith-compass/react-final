@@ -6,6 +6,7 @@ import Time from './components/time/Time';
 import Button from './components/button/Button';
 import PropTypes from 'prop-types';
 import SimpleList from './components/list/SimpleList';
+import Event from './components/event/Event';
 
 
 class App extends Component {
@@ -27,8 +28,10 @@ class App extends Component {
       <div className="container">
       <Time now={new Date().toISOString()}/>
       <SimpleList {...this.nameso} />
+      {/* <Button passDataOut={(e) => console.log(e)}/><br/> */}
       <Button /><br/>
       <Button /><br/>
+      <Event passDataOut={(e) => console.log(e)}/>
         {this.props.names.map((e, i) => {
           return <div key={i}>
             <div className="card" style={{width: "18rem"}}>
